@@ -1,0 +1,172 @@
+/************************
+MOBILE FIRST - GOES HERE
+*************************/
+/*Set header max-width*/
+
+
+/*Here comes the header of the site "The Code Review" part*/
+.top h1{
+  font-size: 2vw;
+  display: block;
+  text-align: center;
+  background-color: #2f4f4f;
+  color: white;
+  margin: 0 auto;
+  padding: 8%;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/*Here comes the "sign for our newsletter"*/
+.newsletter {
+  display: block;
+  text-align: center;
+  padding: 5% 20px;
+}
+
+/*Style the h2 inside the "Signup for our newsletter" section */
+.newsletter h2{
+  font-size: 1.2em;
+}
+
+/*Style the paragraph inside the "Signup for our newsletter" section */
+.newsletter p {
+  font-size: 1em;
+  color: #a9a9a9;
+  border-bottom: 4px solid black;
+  padding-bottom: 10px;
+}
+
+
+/*Here is where I start editing the form*/
+
+/*set common parameters for the whole form*/
+form {
+  max-width: 90%;
+  margin: 5% auto;
+  padding: 5px 10px;
+  background: inherit;
+  border-radius: 8px;
+}
+
+/*Make the inline-block look for all first fieldset*/
+input[type=text], input[type=number], input[type=email], textarea, select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #e8eeef;
+}
+
+/*Style placeholders*/
+::-webkit-input-placeholder {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: right;
+  padding-right: 4%;
+}
+
+/*Remove default borders to fieldset*/
+fieldset {
+  border: none;
+}
+
+/*Add separation line from fieldset 1 to 2*/
+fieldset.firstp {
+  border-bottom: 1px solid;
+}
+
+fieldset.secondp{
+  margin-top: 10%;
+}
+
+/*Style the second fieldset*/
+input[type="radio"],input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+/*Style the submit button*/
+button[type=submit] {
+    width: 100%;
+    background-color: #3ca6bd;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Display as block labels, so they occupy a 100% width*/
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/*Align each of the radio and checboxes inputs*/
+label.light {
+  font-weight: 300;
+  display: inline-block;
+}
+
+/*Make legends bigger*/
+legend {
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
+/*Footer letter italic*/
+footer{
+  font-style: italic;
+  text-align: center;
+  color: #2f4f4f;
+  font-size: .8em;
+}
+
+
+/************************
+DESKTOP SECOND - GOES HERE
+*************************/
+@media (min-width:480px) {
+
+/*Reduce form width*/
+form {
+  max-width: 60%;
+  margin: 3% auto;
+  padding: 5px 10px;
+  background: inherit;
+  border-radius: 8px;
+}
+
+
+
+
+
+fieldset.firstp div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+
+}
+
+.wrap-phone{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+input[type=text], input[type=number], input[type=email], select{
+  max-width: 60%;
+}
+
+
+
+
+
+}

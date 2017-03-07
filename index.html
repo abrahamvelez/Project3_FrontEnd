@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Abraham Velez Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <span class="top">
+      <h1>The Code Review</h1>
+    </span>
+  </header>
+
+  <section>
+    <div class="newsletter">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing great in your inbox</p>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <form action="index.html" method="post">
+        <fieldset class="firstp">
+          <legend><span class="contact">Contact Information</span></legend>
+          <div class="test-wrap">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Required">
+          </div>
+          <div class="wrap-email">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="user_email" placeholder="Required">
+          </div>
+          <div class="wrap-phone">
+          <label for="phone">Phone Number:</label>
+          <input type="number" id="phone" name="user_phone" placeholder="">
+          </div>
+          <div class="wrap-street">
+          <label for="street">Street Address:</label>
+          <input type="text" id="street" name="user_street" placeholder="">
+          </div>
+          <div class="wrap-city">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="user_city" placeholder="">
+          </div>
+          <div class="wrap-zip">
+          <label for="zipcode">Zip Code:</label>
+          <input type="number" id="zipcode" name="user_zipcode" placeholder="">
+          </div>
+          <div class="wrap-state">
+          <label for="state">State:</label>
+          <select id="state" name="user_state">
+            <option value="choose">Choose State</option>
+            <option value="california">California</option>
+            <option value="nevada">Nevada</option>
+            <option value="oregon">Oregon</option>
+            <option value="arizona">Arizona</option>
+            <option value="utah">Utah</option>
+            <option value="texas">Texas</option>
+          </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="secondp">
+          <legend><span class="news">Newsletter</span></legend>
+
+          <label>Select the newsletters you would like to receive</label>
+          <input type="checkbox" id="htmlnews" value="interest_html" name="user_interest"><label class="light" for="htmlnews">HTML News</label><br>
+          <input type="checkbox" id="cssnews" value="interest_css" name="user_interest"><label class="light" for="cssnews">CSS News</label><br>
+          <input type="checkbox" id="javascriptnews" value="interest_javascript" name="user_interest"><label class="light" for="javascriptnews">JavaScript News</label>
+
+          <label>Newsletter Format:</label>
+          <input type="radio" id="html" value="html" name="newsletter_format"><label class="light" for="html">HTML</label><br>
+          <input type="radio" id="plain" value="plain" name="newsletter_format"><label class="light" for="plain">Plain Text</label>
+          <label for="topics">Other topics you'd love to hear about:</label>
+          <textarea id="topics" name="user_topics"></textarea>
+
+          <button type="submit">Sign Up</button>
+
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright the code review</p>
+  </footer>
+
+</body>
